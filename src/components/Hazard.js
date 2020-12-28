@@ -1,6 +1,6 @@
 import React from 'react';
 const YesNo = new Map([
-  [true, 'YES 😱'],
+  [true, 'YES 😲'],
   [false, 'nope'],
 ]);
 
