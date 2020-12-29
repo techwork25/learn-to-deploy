@@ -4,20 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "parcel build src/index.html"
+    "test": "node tests/*.js",
+    "imagemin": "imagemin src/images/* -o dist/images",
+    "prebuild": "npm run imagemin",
+    "build": "npm run test && parcel build src/index.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "axios": "^0.21.1",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.16.0",
     "eslint-plugin-react": "^7.21.5",
+    "imagemin-cli": "^6.0.0",
     "parcel-bundler": "^1.12.4",
     "prettier": "^2.2.1"
   },
   "dependencies": {
+    "@types/date-fns": "^2.6.0",
     "date-fns": "^2.16.1",
     "format-number": "^3.0.0",
     "react": ">=16.8",

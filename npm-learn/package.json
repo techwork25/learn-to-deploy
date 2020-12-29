@@ -1,0 +1,23 @@
+{
+  "name": "npm-learn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "say-hello": "echo 'Hello World'",
+    "presay-hello": "echo 'I run before say-hello'",
+    "postsay-hello": "echo 'You read Hello World. but now I say Goodbye and See You'",
+    "clean": "rm -r dist && mkdir dist",
+    "prebuild": "npm run clean",
+    "build": "npm run clean && webpack",
+    "bash-hello": "bash hello.sh",
+    "js-add": "node add.js",
+    "imagemin": "imagemin src/images/* -o dist/images"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "imagemin-cli": "^6.0.0"
+  }
+}
