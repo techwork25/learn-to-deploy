@@ -14,7 +14,7 @@
   "author": "Remy Sharp (https://remysharp.com)",
   "license": "MIT",
   "dependencies": {
-    "date-fns": "^2.11.1",
+    "date-fns": "^2.29.2",
     "format-number": "^3.0.0",
     "react": ">=16.8",
     "react-async-hook": "^3.6.1",
