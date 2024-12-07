@@ -22,7 +22,7 @@
     "prettier": "^2.2.1"
   },
   "dependencies": {
-    "@types/date-fns": "^2.6.0",
+    "@types/date-fns": "^2.6.3",
     "date-fns": "^2.16.1",
     "format-number": "^3.0.0",
     "react": ">=16.8",
